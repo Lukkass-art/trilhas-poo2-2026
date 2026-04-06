@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package br.edu.tds.projetopoo;
+package br.edu.tds.projetoCliente;
 
 /**
  *
@@ -25,12 +25,29 @@ public class Cliente {
     }
     //Metados get set
     
+    public String getNome(){
+        return this.nome;
+    }
+    public void setNome(String n){
+        this.nome = n;
+    }
+    public void setCPF(String c){
+        this.cpf = c;    
+    }
+    public void setIdade(int i){
+        this.idade = i;
+    }
+   
+   
+    
+    
     //Metados Funcionais
     public void imprimeDadosCliente(){
     System.out.println("nome.:" +this.nome);
     System.out.println("idade.:" +this.idade);
     System.out.println("cpf.:" +this.cpf);
     }
+    
     
     
     
